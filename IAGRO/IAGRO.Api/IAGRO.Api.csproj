@@ -15,11 +15,4 @@
       <ProjectReference Include="..\IAGRO.Application\IAGRO.Application.csproj" />
       <ProjectReference Include="..\IAGRO.Domain\IAGRO.Domain.csproj" />
     </ItemGroup>
-
-    <ItemGroup>
-        <Content Include="..\IAGRO.Domain\DBO\**">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </Content>
-    </ItemGroup>
-
 </Project>

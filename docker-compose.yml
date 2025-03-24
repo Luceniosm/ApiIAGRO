@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  iagro-api:
+    build:
+      context: ./IAGRO
+      dockerfile: Dockerfile
+    ports:
+      - "5193:5193"
+    environment:
+      - ASPNETCORE_URLS=http://+:5193
+      - ASPNETCORE_ENVIRONMENT=Development
+    volumes:
+      - ./IAGRO/IAGRO.Api/DBO:/app/DBO
